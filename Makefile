@@ -1,8 +1,8 @@
 .PHONY: js
 
 js:
-	./node_modules/.bin/coffee -o js -c lib/
-	cp -r lib/font/data js/font/data
+	./node_modules/.bin/babel ./src -d ./lib
+	cp -r src/font/data lib/font/data
 
 browser: lib/**/*.coffee
 	mkdir -p build/
