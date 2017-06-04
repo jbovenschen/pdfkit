@@ -1,3 +1,2 @@
-// Load CoffeeScript, and the main PDFKit files
-require('coffee-script/register');
+// Load the main PDFKit files
 module.exports = require('./lib/document');
